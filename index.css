@@ -223,6 +223,8 @@ nav .small-nav{
     align-items: center;
     gap: 1rem;
 
+    padding: 1rem 0;
+
     width: 100%;
 }
 
