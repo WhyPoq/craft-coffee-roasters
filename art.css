@@ -1,0 +1,46 @@
+@media (min-width: 35em){
+    body{
+        flex-direction: column;
+        justify-content: space-between;
+
+        background-image: url("./Assets/art-picture.webp");
+    }
+
+    .upper-section{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .heading-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+
+        width: min(45%, 50rem);
+        padding: 4rem;
+        padding-left: 5rem;
+        flex-shrink: 0;
+    }
+    
+    main{
+        padding: 3rem min(7rem, 5%);
+        width: 100%;
+    }
+
+    .paragraphs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .paragraphs p{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+
+    .paragraphs .logo{
+        width: max(10rem, 8%);
+        opacity: 0.8;
+    }
+}

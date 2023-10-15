@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Craft Coffee Roasters - Merchants Quay Dublin</title>
+        <link rel="icon" type="image/x-icon" href="./Assets/favicon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Enriqueta&family=Prosto+One&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="pastry.css">
+
+
+    </head>
+    <body>
+        <nav>
+            <div class="desktop">
+                <div class="big-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="flex-center">
+                                <h3>WELCOME</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="suppliers.html" class="flex-center selected">
+                                <h3>SUPPLIERS</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="art.html" class="flex-center">
+                                <h3>ART</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery.html" class="flex-center">
+                                <h3>GALLERY</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="flex-center">
+                                <h3>CONTACT US</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phone max-width container tint-background">
+                <div class="small-nav">
+                    <h3>Menu</h3>
+                    <button class="dropdown-menu-button" onclick="toggleMenu()">
+                        <img src="./Assets/menu-icon.svg"/>
+                    </button>
+                </div>
+            </div>
+
+            <!--nav dropdown for phone-->
+            <div class="outer-dropdown-menu">
+                <div class="container closed dropdown-menu phone" id="dropdown-menu">
+                    <div class="flex-end">
+                        <button class="dropdown-menu-button" onclick="toggleMenu()">
+                            <img src="./Assets/close-icon.svg"/>
+                        </button>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="index.html" class="flex-center">
+                                <h3>WELCOME</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="suppliers.html" class="flex-center selected">
+                                <h3>SUPPLIERS</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="art.html" class="flex-center">
+                                <h3>ART</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery.html" class="flex-center">
+                                <h3>GALLERY</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="flex-center">
+                                <h3>CONTACT US</h3>
+                                <div class="underline"></div>
+                            </a>
+                        </li>        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        
+
+        <div class="separator phone"></div>
+
+        <main class="tint-background">
+            <section class="container heading-section">
+                <h1>SUPPLIERS</h1>
+                <p>
+                    There's nothing like stumbling across something that makes you say "oooohhh" and if that's something you can eat, all the better!
+                </p>
+            </section>
+
+            <div class="separator phone"></div>
+
+            <section class="phone">
+                <img src="Assets/pastry-picture.webp"/>
+            </section>
+
+            <div class="separator phone"></div>
+
+            <section class="container">
+                <p>
+                    We have a lovely range of yummy cakes, pastries and sambos available every day, but we're always looking for more delicious treats to stock.
+                </p>
+                <P>
+                    If you make something that makes people go "oooohhh" please get in touch with us.
+                </P>
+
+                <img class="logo bottom" src="Assets/logo-craft-coffee-roasters.png" alt="Craft Cofee Roasters"/>
+            </section>
+        </main>
+    
+
+        <script src="index.js"></script>
+    </body>
+</html>

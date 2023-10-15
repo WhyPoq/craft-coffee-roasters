@@ -1,0 +1,456 @@
+/* -------------------- */
+/* Custom properties    */
+/* -------------------- */
+
+:root{
+    /* font-sizes */
+    --fs-heading: 2.3rem;
+    --fs-heading-d: 3.2rem;
+
+    --fs-nav: 1.6rem;
+    --fs-nav-d: 2rem;
+
+    --fs-p: 1.6rem;
+    --fs-p-d: 2rem;
+
+    --fs-p-small: 1.5rem;
+
+    /* font-families */
+    --ff-cursive: 'Prosto One', cursive;
+    --ff-sefir: 'Enriqueta', serif;
+}
+
+/* -------------------- */
+/* Utility classes      */
+/* -------------------- */
+
+.tint-background{
+    background-color: hsl(30, 24%, 16%, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.tint-background-phone{
+    background-color: hsl(30, 24%, 16%, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem min(2rem, 8%);
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.flex-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.flex-last-order{
+    order: 100;
+}
+
+.max-width{
+    width: 100%;
+}
+
+
+/* -------------------- */
+/* Reset                */
+/* -------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+section,
+img{
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* remove animations for people who have turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* rem scaling */
+html{
+    font-size: 62.5%;
+}
+
+
+/* -------------------- */
+/* Main styles          */
+/* -------------------- */
+
+body{
+    position: relative;
+
+    font-family: var(--ff-cursive);
+    font-size: var(--fs-p);
+    font-weight: 400;
+    color: white;
+
+    min-height: 100vh;
+
+    background-image: url("./Assets/pastry-picture.webp");
+    background-size: min(1500px, 300%);
+    background-position: top;
+}
+
+nav{
+    font-size: var(--fs-nav);
+}
+
+nav div.container{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+nav .desktop ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    font-size: var(--fs-nav);
+
+    column-gap: 4rem;
+    row-gap: 1.5rem;
+}
+
+nav .big-nav{
+    display: flex;
+    justify-content: end;
+    text-align: end;
+
+    padding: 2rem;
+    padding-right: 4rem;
+
+    width: 100%;
+}
+
+nav .phone ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-size: var(--fs-nav);
+
+    column-gap: 4rem;
+}
+
+nav .small-nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+nav .dropdown-menu-button{
+    position: relative;
+    width: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav .dropdown-menu-button::after{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+nav .dropdown-menu-button:hover{
+    opacity: 0.8;
+}
+
+nav .dropdown-menu-button img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.outer-dropdown-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 33%;
+    height: 100%;
+
+    z-index: 2;
+    pointer-events: all;
+
+    align-items: stretch;
+
+    background-color: hsl(30, 24%, 16%, 0.7);
+    backdrop-filter: blur(20px);
+
+    transition: transform 0.4s ease-in-out;
+}
+
+.dropdown-menu.closed{
+    transform: translate(100%);
+}
+
+.dropdown-menu.open{
+    transform: translate(0);
+}
+
+.dropdown-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding-left: 2rem;
+}
+
+.underline{
+    width: 7rem;
+    height: 2.5px;
+    background-color: white;
+    transform: scaleX(0);
+
+    box-shadow: 0.4px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.2s;
+}
+
+nav a:hover .underline{
+    transform: scaleX(0.5);
+}
+
+nav a.selected .underline{
+    transform: scaleX(1);
+}
+
+.separator{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.logo{
+    width: min(10rem, 40%);
+}
+
+.logo.bottom{
+    padding-top: 1rem;
+}
+
+h1, h2{
+    font-size: var(--fs-heading);
+    text-align: center;
+    max-width: 25rem;
+    line-height: 2.7rem;
+
+    text-shadow: 0px 0.4rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+h3{
+    font-size: var(--fs-nav);
+    text-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+p, h4{
+    font-family: var(--ff-sefir);
+    font-size: var(--fs-p);
+    opacity: 0.8;
+    max-width: 37rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+
+    text-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+h4{
+    opacity: 1;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+.made-by{
+    font-size: var(--fs-p-small);
+}
+
+
+
+/* -------------------- */
+/* Media query          */
+/* -------------------- */
+
+.desktop{
+    display: none;
+}
+
+.phone{
+    display: block;
+}
+
+@media (min-width: 35em){
+    .desktop{
+        display: block;
+    }
+
+    .phone{
+        display: none;
+    }
+
+    body{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        background-image: url("./Assets/homepage-picture.webp");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .tint-background-phone{
+        background-color: rgba(0, 0, 0, 0);
+        backdrop-filter: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        flex-shrink: 0;
+
+        width: min(45%, 50rem);
+        padding: 3rem;
+        padding-top: 3rem;
+    }
+
+    .logo{
+        width: min(15rem, 60%);
+    }
+
+    .logo.bottom{
+        padding-top: 3rem;
+    }
+
+    h1, h2{
+        font-size: var(--fs-heading-d);
+        line-height: 3.2rem;
+        max-width: 30rem;
+    }
+
+    .heading-section{
+        gap: 4rem;
+    }
+    
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: var(--fs-nav-d);
+        text-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 1);
+
+        font-weight: 800;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke: 1.5px black;
+
+    }
+
+    .underline{
+        box-shadow: 0.4px 0px 5px 0px rgba(0, 0, 0, 1);
+        border: 2px solid black;
+        box-sizing: content-box;
+    }
+
+    p{
+        font-size: var(--fs-p-d);
+        opacity: 0.85;
+    }
+   
+}

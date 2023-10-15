@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Craft Coffee Roasters - Merchants Quay Dublin</title>
+        <link rel="icon" type="image/x-icon" href="./Assets/favicon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Enriqueta&family=Prosto+One&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="contact.css">
+
+
+    </head>
+    <body>
+        <div class="flex-column flex-grow">
+            <nav>
+                <div class="desktop">
+                    <div class="big-nav">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="flex-center">
+                                    <h3>WELCOME</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="suppliers.html" class="flex-center">
+                                    <h3>SUPPLIERS</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="art.html" class="flex-center">
+                                    <h3>ART</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gallery.html" class="flex-center">
+                                    <h3>GALLERY</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="flex-center selected">
+                                    <h3>CONTACT US</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phone max-width container tint-background">
+                    <div class="small-nav">
+                        <h3>Menu</h3>
+                        <button class="dropdown-menu-button" onclick="toggleMenu()">
+                            <img src="./Assets/menu-icon.svg"/>
+                        </button>
+                    </div>
+                </div>
+
+                <!--nav dropdown for phone-->
+                <div class="outer-dropdown-menu">
+                    <div class="container closed dropdown-menu phone" id="dropdown-menu">
+                        <div class="flex-end">
+                            <button class="dropdown-menu-button" onclick="toggleMenu()">
+                                <img src="./Assets/close-icon.svg"/>
+                            </button>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="index.html" class="flex-center">
+                                    <h3>WELCOME</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="suppliers.html" class="flex-center">
+                                    <h3>SUPPLIERS</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="art.html" class="flex-center">
+                                    <h3>ART</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gallery.html" class="flex-center">
+                                    <h3>GALLERY</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="flex-center selected">
+                                    <h3>CONTACT US</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>        
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="desktop flex-grow">
+                <div class="map">
+                    <img src="Assets/map-picture.webp">
+                </div>
+            </div>
+        </div>
+    
+        
+
+        <div class="separator phone"></div>
+
+        <main class="tint-background">
+            <section class="container heading-section">
+                <h1>CONTACT US</h1>
+            </section>
+
+            <div class="separator phone"></div>
+
+            <section class="phone">
+                <div class="container">
+                    <img class="logo" src="Assets/logo-craft-coffee-roasters.png" alt="Craft Cofee Roasters"/>
+                </div>
+            </section>
+
+            <section class="container information-container">
+                <p>
+                    27 Merchant's Quay, <br/>
+                    Dublin 8, 01 538 0040
+                </p>
+                <P>
+                    craftcoffeeroasters@gmail.com
+                </P>
+
+                <div class="flex-center">
+                    <h4>
+                        OPENING HOURS
+                    <h4>
+                    <p class="opening-hours-section">
+                        Monday - Friday 7-7 pm<br/>
+                        Saturday, Sunday and <br/>Bank Holidays 8-6 pm
+                    </p>
+                </div>
+            </section>
+
+            <section class="container phone">
+                <img src="Assets/map-picture.webp"/>
+            </section>
+
+            <section class="desktop">
+                <div class="container">
+                    <img class="logo" src="Assets/logo-craft-coffee-roasters.png" alt="Craft Cofee Roasters"/>
+                </div>
+            </section>
+
+            <section class="container">
+                <p class="made-by">
+                    Made by Konstantin Skliar
+                </p>
+            </section>
+
+        </main>
+    
+
+        <script src="index.js"></script>
+    </body>
+</html>

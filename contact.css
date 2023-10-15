@@ -1,0 +1,32 @@
+.opening-hours-section{
+    text-align: center;
+}
+
+.information-container{
+    gap: 4rem;
+    line-height: 2.5rem;
+}
+
+.map{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    padding: 0 5rem;
+}
+
+.map img{
+    max-width: 80rem
+}
+
+@media (min-width: 35em){
+    body{
+        background-image: url("./Assets/contact-background.jpg");
+    }
+
+    .heading-section{
+        padding-top: 2rem;
+    }
+}
