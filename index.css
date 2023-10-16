@@ -274,8 +274,8 @@ nav .dropdown-menu-button img{
 
     align-items: stretch;
 
-    background-color: hsl(30, 24%, 16%, 0.7);
-    backdrop-filter: blur(20px);
+    background-color: hsl(30, 24%, 16%, 0.9);
+    /* backdrop-filter: blur(20px); */
 
     transition: transform 0.4s ease-in-out;
 }
