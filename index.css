@@ -180,7 +180,7 @@ nav{
     font-size: var(--fs-nav);
 }
 
-nav div.container{
+nav .small.container{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -274,10 +274,16 @@ nav .dropdown-menu-button img{
 
     align-items: stretch;
 
-    background-color: hsl(30, 24%, 16%, 0.9);
-    /* backdrop-filter: blur(20px); */
+    background-color: hsl(30, 24%, 16%, 0.95);
 
     transition: transform 0.4s ease-in-out;
+}
+
+@supports (backdrop-filter: blur(20px)) {
+    .dropdown-menu{
+        background-color: hsl(30, 24%, 16%, 0.7);
+        backdrop-filter: blur(20px);
+    }
 }
 
 .dropdown-menu.closed{
@@ -389,14 +395,19 @@ h4{
     }
 
     body{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-
         background-image: url("./Assets/homepage-picture.webp");
         background-size:cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    .inner-body{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        width: 100%;
+        min-height: 100vh;
     }
 
     .tint-background{

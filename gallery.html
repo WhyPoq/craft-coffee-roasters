@@ -16,136 +16,138 @@
 
     </head>
     <body>
-        <nav>
-            <div class="desktop">
-                <div class="big-nav">
-                    <ul>
-                        <li>
-                            <a href="index.html" class="flex-center">
-                                <h3>WELCOME</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="suppliers.html" class="flex-center">
-                                <h3>SUPPLIERS</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="art.html" class="flex-center">
-                                <h3>ART</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="gallery.html" class="flex-center selected">
-                                <h3>GALLERY</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="flex-center">
-                                <h3>CONTACT US</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>
-                    </ul>
+        <div class="inner-body">
+            <nav>
+                <div class="desktop">
+                    <div class="big-nav">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="flex-center">
+                                    <h3>WELCOME</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="suppliers.html" class="flex-center">
+                                    <h3>SUPPLIERS</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="art.html" class="flex-center">
+                                    <h3>ART</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gallery.html" class="flex-center selected">
+                                    <h3>GALLERY</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="flex-center">
+                                    <h3>CONTACT US</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="phone max-width container tint-background">
-                <div class="small-nav">
-                    <h3>Menu</h3>
-                    <button class="dropdown-menu-button" onclick="toggleMenu()">
-                        <img src="./Assets/menu-icon.svg"/>
-                    </button>
-                </div>
-            </div>
-
-            <!--nav dropdown for phone-->
-            <div class="outer-dropdown-menu">
-                <div class="container closed dropdown-menu phone" id="dropdown-menu">
-                    <div class="flex-end">
+                <div class="phone max-width container tint-background">
+                    <div class="small-nav">
+                        <h3>Menu</h3>
                         <button class="dropdown-menu-button" onclick="toggleMenu()">
-                            <img src="./Assets/close-icon.svg"/>
+                            <img src="./Assets/menu-icon.svg"/>
                         </button>
                     </div>
-
-                    <ul>
-                        <li>
-                            <a href="index.html" class="flex-center">
-                                <h3>WELCOME</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="suppliers.html" class="flex-center">
-                                <h3>SUPPLIERS</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="art.html" class="flex-center">
-                                <h3>ART</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="gallery.html" class="flex-center selected">
-                                <h3>GALLERY</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="flex-center">
-                                <h3>CONTACT US</h3>
-                                <div class="underline"></div>
-                            </a>
-                        </li>        
-                    </ul>
                 </div>
-            </div>
-        </nav>
-    
+
+                <!--nav dropdown for phone-->
+                <div class="outer-dropdown-menu">
+                    <div class="container closed dropdown-menu phone" id="dropdown-menu">
+                        <div class="flex-end">
+                            <button class="dropdown-menu-button" onclick="toggleMenu()">
+                                <img src="./Assets/close-icon.svg"/>
+                            </button>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="index.html" class="flex-center">
+                                    <h3>WELCOME</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="suppliers.html" class="flex-center">
+                                    <h3>SUPPLIERS</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="art.html" class="flex-center">
+                                    <h3>ART</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gallery.html" class="flex-center selected">
+                                    <h3>GALLERY</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="flex-center">
+                                    <h3>CONTACT US</h3>
+                                    <div class="underline"></div>
+                                </a>
+                            </li>        
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         
-
-        <div class="separator phone"></div>
-
-        <main class="tint-background-phone">
-            <section class="container heading-section">
-                <h1>GALLERY</h1>
-            </section>
+            
 
             <div class="separator phone"></div>
 
-            <section class="phone flex-center">
-                <img src="Assets/Gallery-images/gallery-1.webp"/>
-                <div class="separator"></div>
-                <img src="Assets/Gallery-images/gallery-2.webp"/>
-                <div class="separator"></div>
-                <img src="Assets/Gallery-images/gallery-3.webp"/>
-            </section>
+            <main class="tint-background-phone">
+                <section class="container heading-section">
+                    <h1>GALLERY</h1>
+                </section>
 
-            <section class="desktop">
-                <div class="gallery-view-section flex-center">
-                    <button class="arrow flip" onclick="prevImage()">
-                        <img src="Assets/arrow-icon.svg"> 
-                    </button>
-                    <img id="gallery-image" src="Assets/Gallery-images/gallery-1.webp"/>
-                    <button class="arrow" onclick="nextImage()">
-                        <img src="Assets/arrow-icon.svg"> 
-                    </button>
-                </div>
-            </section>
+                <div class="separator phone"></div>
 
-            <div class="separator phone"></div>
+                <section class="phone flex-center">
+                    <img src="Assets/Gallery-images/gallery-1.webp"/>
+                    <div class="separator"></div>
+                    <img src="Assets/Gallery-images/gallery-2.webp"/>
+                    <div class="separator"></div>
+                    <img src="Assets/Gallery-images/gallery-3.webp"/>
+                </section>
 
-            <section class="container">
-                <img class="logo bottom" src="Assets/logo-craft-coffee-roasters.png" alt="Craft Cofee Roasters"/>
-            </section>
-        </main>
+                <section class="desktop">
+                    <div class="gallery-view-section flex-center">
+                        <button class="arrow flip" onclick="prevImage()">
+                            <img src="Assets/arrow-icon.svg"> 
+                        </button>
+                        <img id="gallery-image" src="Assets/Gallery-images/gallery-1.webp"/>
+                        <button class="arrow" onclick="nextImage()">
+                            <img src="Assets/arrow-icon.svg"> 
+                        </button>
+                    </div>
+                </section>
+
+                <div class="separator phone"></div>
+
+                <section class="container">
+                    <img class="logo bottom" src="Assets/logo-craft-coffee-roasters.png" alt="Craft Cofee Roasters"/>
+                </section>
+            </main>
     
+        </div>
 
         <script src="index.js"></script>
         <script src="gallery.js"></script>

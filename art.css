@@ -1,9 +1,11 @@
 @media (min-width: 35em){
     body{
+        background-image: url("./Assets/art-picture.webp");
+    }
+
+    .inner-body{
         flex-direction: column;
         justify-content: space-between;
-
-        background-image: url("./Assets/art-picture.webp");
     }
 
     .upper-section{
