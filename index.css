@@ -174,7 +174,7 @@ body{
     background-image: url("./Assets/pastry-blured.jpg");
     background-size: min(1500px, 300%);
     background-position: top;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 nav{
